@@ -1,0 +1,64 @@
+.intro_main_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro_content_container {
+    z-index: 10;
+    margin-top: 5vh;
+}
+
+.intro_content_container h1 {
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 80px;
+}
+
+.intro_content_container h1 span {
+    border-bottom: 8px solid #4CE19E;
+}
+
+.intro_desc {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29.25px;
+    color: rgb(217, 217, 217);
+    width: 420px;
+    margin-top: 10vh;
+}
+
+.intro_btn {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    padding-bottom: 1vh;
+    border-bottom: 4px solid #4CE19E;
+    width: 97px;
+    margin-top: 8vh;
+}
+
+.intro_btn:hover {
+    color: #4CE19E;
+    cursor: pointer;
+}
+
+.profile_pic {
+    position: absolute;
+    top: 0px;
+    left: 56.7vw;
+    /* right: 0px; */
+
+    width: 450px;
+    height: 730px;
+    background-image: url('../../assets/ProfileDesktop.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.circle_pic {
+    position: fixed;
+    left: 53.5vw;
+    top: 59vh;
+}

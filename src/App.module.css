@@ -1,0 +1,18 @@
+.main_container {
+  display: flex;
+  justify-content: center;
+}
+
+.sub_container {
+  width: 60%;
+}
+
+.rings {
+  position: fixed;
+  left: 150px;
+  top: 130px;
+}
+
+.horizontal_line {
+  margin-top: 20vh;
+}

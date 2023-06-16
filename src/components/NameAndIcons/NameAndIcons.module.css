@@ -1,0 +1,25 @@
+.name_icons_main_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Space Grotesk';
+}
+
+.name_icons_main_container p {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42.56px;
+}
+
+.icon_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    z-index: 10;
+    margin-right: 1.5vw;
+}
+
+.icon_container img {
+    cursor: pointer;
+}
