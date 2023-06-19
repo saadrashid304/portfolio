@@ -58,7 +58,7 @@
 }
 
 .circle_pic {
-    position: fixed;
+    position: absolute;
     left: 53.5vw;
     top: 59vh;
 }

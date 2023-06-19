@@ -1,6 +1,8 @@
 import styles from "./App.module.css";
 import NameAndIcons from "./components/NameAndIcons/NameAndIcons";
 import Introduction from "./components/Introduction/Introduction";
+import TechnicalSkills from "./components/TechnicalSkills/TechnicalSkills";
+import TechnicalProjects from "./components/TechnicalProjects/TechnicalProjects";
 import rings from "./assets/pattern-rings.svg";
 
 const App = () => {
@@ -11,6 +13,8 @@ const App = () => {
         <NameAndIcons />
         <Introduction />
         <hr className={styles.horizontal_line} />
+        <TechnicalSkills />
+        <TechnicalProjects />
       </div>
     </div>
   );

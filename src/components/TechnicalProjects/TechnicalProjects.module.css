@@ -1,0 +1,30 @@
+.projects_main_container {
+    margin-top: 8vh;
+}
+
+.projects_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects_header h1 {
+    font-size: 88px;
+    font-weight: 700;
+    line-height: 88px;
+}
+
+.projects_contact_btn {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    padding-bottom: 1vh;
+    border-bottom: 4px solid #4CE19E;
+    width: 97px;
+    margin-top: 8vh;
+}
+
+.projects_contact_btn:hover {
+    color: #4CE19E;
+    cursor: pointer;
+}
