@@ -1,75 +1,77 @@
+import designo from "../DesignoTumbnail.png";
+import space from "../SpaceThumbnail.png";
+import meals from "../MealsThumbnail.png";
+import sunnyside from "../SunnysideThumbnail.png";
+import card from "../CardThumbnail.png";
+import expense from "../ExpenseThumbnail.png";
+
 const projects = [
   {
     id: 1,
-    title: "Design Portfolio",
-    skills: ["Html", "CSS"],
-    projectUrl:
-      "https://www.frontendmentor.io/challenges/singlepage-design-portfolio-2MMhyhfKVo",
-    sourceCodeUrl: "https://www.frontendmentor.io/challenges",
+    title: "Designo",
+    skills: ["Html", "CSS", "React"],
+    projectUrl: "https://sr-designo.netlify.app",
+    sourceCodeUrl: "https://github.com/saadrashid304/designo-multipage-website",
     thumbnail: {
-      small: "/projects/thumbnail-project-1-small.webp",
-      large: "/projects/thumbnail-project-1-large.webp",
+      small: designo,
+      large: designo,
     },
   },
   {
     id: 2,
-    title: "E-learning Landing Page",
-    skills: ["Html", "CSS"],
-    projectUrl:
-      "https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q",
-    sourceCodeUrl: "https://www.frontendmentor.io/challenges",
+    title: "Space Tourism",
+    skills: ["Html", "CSS", "React"],
+    projectUrl: "https://sr-tourism.netlify.app",
+    sourceCodeUrl: "https://github.com/saadrashid304/space-tourism-website",
     thumbnail: {
-      small: "/projects/thumbnail-project-2-small.webp",
-      large: "/projects/thumbnail-project-2-large.webp",
+      small: space,
+      large: space,
     },
   },
   {
     id: 3,
-    title: "Todo Web App",
+    title: "SR Meals",
     skills: ["Html", "CSS", "JavaScript"],
-    projectUrl: "https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW",
-    sourceCodeUrl: "https://www.frontendmentor.io/challenges",
+    projectUrl: "https://sr-meals.netlify.app",
+    sourceCodeUrl: "https://github.com/saadrashid304/food-order-app",
     thumbnail: {
-      small: "/projects/thumbnail-project-3-small.webp",
-      large: "/projects/thumbnail-project-3-large.webp",
+      small: meals,
+      large: meals,
     },
   },
   {
     id: 4,
-    title: "ENTERTAINMENT WEB APP",
-    skills: ["Html", "CSS", "JavaScript"],
-    projectUrl:
-      "https://www.frontendmentor.io/challenges/entertainment-web-app-J-UhgAW1X",
-    sourceCodeUrl: "https://www.frontendmentor.io/challenges",
+    title: "Sunnyside",
+    skills: ["Html", "CSS"],
+    projectUrl: "https://sr-sunnyside.netlify.app",
+    sourceCodeUrl: "https://github.com/saadrashid304/sunnyside-landing-page",
     thumbnail: {
-      small: "/projects/thumbnail-project-4-small.webp",
-      large: "/projects/thumbnail-project-4-large.webp",
+      small: sunnyside,
+      large: sunnyside,
     },
   },
   {
     id: 5,
-    title: "MEMORY GAME",
+    title: "Expense Tracker",
     skills: ["Html", "CSS", "JavaScript"],
-    projectUrl:
-      "https://www.frontendmentor.io/challenges/memory-game-vse4WFPvM",
-    sourceCodeUrl: "https://www.frontendmentor.io/challenges",
+    projectUrl: "https://sr-expense-tracker.netlify.app",
+    sourceCodeUrl: "https://github.com/saadrashid304/ExpenseTracker",
     thumbnail: {
-      small: "/projects/thumbnail-project-5-small.webp",
-      large: "/projects/thumbnail-project-5-large.webp",
+      small: expense,
+      large: expense,
     },
   },
   {
     id: 6,
-    title: "ART GALLERY SHOWCASE",
-    skills: ["Html", "CSS", "JavaScript"],
-    projectUrl:
-      "https://www.frontendmentor.io/challenges/galleria-slideshow-site-tEA4pwsa6",
-    sourceCodeUrl: "https://www.frontendmentor.io/challenges",
+    title: "Credit Card Details",
+    skills: ["Html", "CSS"],
+    projectUrl: "https://sr-credit-card.netlify.app",
+    sourceCodeUrl: "https://github.com/saadrashid304/card-details-challenge",
     thumbnail: {
-      small: "/projects/thumbnail-project-6-small.webp",
-      large: "/projects/thumbnail-project-6-large.webp",
+      small: card,
+      large: card,
     },
   },
 ];
 
-export default projects;
+export { projects };
