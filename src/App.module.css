@@ -16,3 +16,25 @@
 .horizontal_line {
   margin-top: 20vh;
 }
+
+.horizontal_line1 {
+  margin-top: 10vh;
+  margin-bottom: 2.5vh;
+}
+
+.contact_me_main_container {
+  background-color: #242424;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.contact_me_sub_container {
+  width: 60%;
+}
+
+.rings1 {
+  position: absolute;
+  left: -300px;
+  top: 410px;
+}

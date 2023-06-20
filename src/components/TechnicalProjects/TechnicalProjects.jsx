@@ -43,7 +43,7 @@ const TechnicalProjects = () => {
               {project.skills.map((skill) => (
                 <p
                   key={Math.random()}
-                  className={skill !== "Html" && styles.skills_margin}
+                  className={skill !== "Html" ? styles.skills_margin : ""}
                 >
                   {skill}
                 </p>

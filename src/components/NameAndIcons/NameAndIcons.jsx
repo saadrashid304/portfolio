@@ -10,7 +10,7 @@ import mentorS from "../../assets/mentorS.png";
 import linkedinS from "../../assets/linkedinS.png";
 import fiverrS from "../../assets/fiverrS.png";
 
-const NameAndIcons = () => {
+const NameAndIcons = ({ flag }) => {
   const [hover, setHover] = useState(null);
 
   const onFMouseOver = () => {
@@ -34,33 +34,65 @@ const NameAndIcons = () => {
   };
 
   return (
-    <div className={styles.name_icons_main_container}>
+    <div
+      className={`${styles.name_icons_main_container} ${
+        flag === "bottom" ? styles.margin_bottom : ""
+      }`}
+    >
       <p>saadrashid</p>
-      <div className={styles.icon_container}>
-        <img
-          src={hover === "G" ? githubS : github}
-          alt=""
-          onMouseOver={onFMouseOver}
-          onMouseLeave={onMouseLeave}
-        />
-        <img
-          src={hover === "M" ? mentorS : mentor}
-          alt=""
-          onMouseOver={onYMouseOver}
-          onMouseLeave={onMouseLeave}
-        />
-        <img
-          src={hover === "L" ? linkedinS : linkedin}
-          alt=""
-          onMouseOver={onTMouseOver}
-          onMouseLeave={onMouseLeave}
-        />
-        <img
-          src={hover === "F" ? fiverrS : fiverr}
-          alt=""
-          onMouseOver={onPMouseOver}
-          onMouseLeave={onMouseLeave}
-        />
+      <div
+        className={`${styles.icon_container} ${
+          flag === "bottom" ? styles.no_margin : ""
+        }`}
+      >
+        <a
+          href="https://github.com/saadrashid304"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={hover === "G" ? githubS : github}
+            alt=""
+            onMouseOver={onFMouseOver}
+            onMouseLeave={onMouseLeave}
+          />
+        </a>
+        <a
+          href="https://www.frontendmentor.io/profile/saadrashid304"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={hover === "M" ? mentorS : mentor}
+            alt=""
+            onMouseOver={onYMouseOver}
+            onMouseLeave={onMouseLeave}
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/saad-rashid-03a46021b/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={hover === "L" ? linkedinS : linkedin}
+            alt=""
+            onMouseOver={onTMouseOver}
+            onMouseLeave={onMouseLeave}
+          />
+        </a>
+        <a
+          href="https://www.fiverr.com/saadrashid304"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={hover === "F" ? fiverrS : fiverr}
+            alt=""
+            onMouseOver={onPMouseOver}
+            onMouseLeave={onMouseLeave}
+          />
+        </a>
       </div>
     </div>
   );

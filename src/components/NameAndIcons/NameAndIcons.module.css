@@ -20,6 +20,14 @@
     margin-right: 1.5vw;
 }
 
+.no_margin {
+    margin-right: 0px;
+}
+
 .icon_container img {
     cursor: pointer;
+}
+
+.margin_bottom {
+    margin-bottom: 7vh;
 }
