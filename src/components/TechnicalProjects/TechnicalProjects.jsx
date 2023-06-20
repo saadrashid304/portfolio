@@ -6,7 +6,19 @@ const TechnicalProjects = () => {
     <div className={styles.projects_main_container}>
       <div className={styles.projects_header}>
         <h1>Projects</h1>
-        <p className={styles.projects_contact_btn}>CONTACT ME</p>
+        <p
+          className={styles.projects_contact_btn}
+          onClick={() => {
+            const element = document.documentElement;
+            const scrollHeight = element.scrollHeight;
+            const clientHeight = element.clientHeight;
+            const scrollableHeight = scrollHeight - clientHeight;
+
+            element.scrollIntoView({ behavior: "smooth", block: "end" });
+          }}
+        >
+          CONTACT ME
+        </p>
       </div>
       <div className={styles.projects_list}>
         {projects.map((project) => (

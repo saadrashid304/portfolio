@@ -13,7 +13,19 @@ const Introduction = () => {
           Based in Pakistan, I'm a React.js developer passionate about building
           accessible web apps that users love.
         </p>
-        <p className={styles.intro_btn}>CONTACT ME</p>
+        <p
+          className={styles.intro_btn}
+          onClick={() => {
+            const element = document.documentElement;
+            const scrollHeight = element.scrollHeight;
+            const clientHeight = element.clientHeight;
+            const scrollableHeight = scrollHeight - clientHeight;
+
+            element.scrollIntoView({ behavior: "smooth", block: "end" });
+          }}
+        >
+          CONTACT ME
+        </p>
       </div>
       <div className={styles.profile_pic} />
       <img src={circle} alt="" className={styles.circle_pic} />
