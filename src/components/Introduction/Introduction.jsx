@@ -17,10 +17,6 @@ const Introduction = () => {
           className={styles.intro_btn}
           onClick={() => {
             const element = document.documentElement;
-            const scrollHeight = element.scrollHeight;
-            const clientHeight = element.clientHeight;
-            const scrollableHeight = scrollHeight - clientHeight;
-
             element.scrollIntoView({ behavior: "smooth", block: "end" });
           }}
         >
