@@ -6,7 +6,8 @@
 }
 
 .skills_sub_container {
-    width: 33%;
+    width: 300px;
+    /* border: 1px solid #fff; */
 }
 
 .skills_sub_container h1 {
@@ -20,4 +21,32 @@
     font-weight: 400;
     line-height: 0px;
     color: rgb(217, 217, 217);
+}
+
+@media screen and (max-width: 1550px) {
+    .skills_sub_container {
+        width: 310px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills_main_container {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .skills_sub_container {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 717px) {
+    .skills_main_container {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .skills_sub_container {
+        text-align: center;
+    }
 }

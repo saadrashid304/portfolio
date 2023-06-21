@@ -17,6 +17,7 @@ const App = () => {
           <Introduction />
           <hr className={styles.horizontal_line} />
           <TechnicalSkills />
+          <hr className={styles.horizontal_lin2} />
           <TechnicalProjects />
         </div>
       </div>
