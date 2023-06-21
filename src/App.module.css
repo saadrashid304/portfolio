@@ -13,6 +13,12 @@
   top: 130px;
 }
 
+.rings2 {
+  position: absolute;
+  right: -10%;
+  top: 125%;
+}
+
 .horizontal_line {
   margin-top: 20vh;
 }
@@ -53,6 +59,12 @@
   }
 }
 
+@media screen and (max-width: 1490px) {
+  .rings2 {
+    right: -15%;
+  }
+}
+
 @media screen and (max-width: 1050px) {
   .sub_container {
     width: 90%;
@@ -62,6 +74,8 @@
     width: 90%;
   }
 }
+
+
 
 @media screen and (max-width: 768px) {
   .sub_container {
@@ -95,6 +109,11 @@
 @media screen and (max-width: 560px) {
   .rings {
     left: -50%;
+  }
+
+  .rings2 {
+    right: -30%;
+    top: 200%;
   }
 }
 

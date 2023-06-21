@@ -12,6 +12,7 @@ const App = () => {
     <Fragment>
       <div className={styles.main_container}>
         <img src={rings} alt="" className={styles.rings} />
+        <img src={rings} alt="" className={styles.rings2} />
         <div className={styles.sub_container}>
           <NameAndIcons flag="top" />
           <Introduction />

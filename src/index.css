@@ -3,4 +3,5 @@ body {
   font-family: 'Space Grotesk';
   color: #fff;
   margin: 0px;
+  overflow-x: hidden;
 }
