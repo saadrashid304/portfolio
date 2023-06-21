@@ -182,4 +182,21 @@ textarea:focus {
     .contact_left_container h1 {
         font-size: 50px;
     }
+
+    .contact_main_container {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .contact_left_container {
+        width: 100%;
+    }
+
+    .contact_right_container {
+        width: 100%;
+    }
+
+    .contact_left_container p {
+        width: 100%;
+    }
 }

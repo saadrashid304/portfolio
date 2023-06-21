@@ -20,17 +20,20 @@
     line-height: 26px;
     padding-bottom: 1vh;
     border-bottom: 4px solid #4CE19E;
-    width: 97px;
+    width: 105px;
+    text-align: center;
 }
 
 .projects_view_btn {
-    width: 110px;
+    width: 118px;
     margin-top: 0px;
     border-bottom: 3px solid #4CE19E;
+    text-align: center;
 }
 
 .projects_code_btn {
-    width: 83px;
+    width: 91px;
+    text-align: center;
     margin-top: 2vh;
     border-bottom: 3px solid #4CE19E;
 }
