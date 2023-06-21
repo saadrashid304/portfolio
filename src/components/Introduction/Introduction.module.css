@@ -122,10 +122,10 @@
     }
 
     .profile_pic {
-        right: 25.5%;
+        right: 20.5%;
         top: -5.5%;
 
-        width: 50%;
+        width: 60%;
         height: 55vh;
         background-image: url('../../assets/ProfileTablet.png');
     }
