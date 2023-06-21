@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .intro_content_container {
@@ -45,12 +46,12 @@
 
 .profile_pic {
     position: absolute;
-    top: 0px;
-    left: 56.7vw;
-    /* right: 0px; */
+    top: -22%;
+    /* left: 0px; */
+    right: 0px;
 
-    width: 450px;
-    height: 730px;
+    width: 39%;
+    height: 140%;
     background-image: url('../../assets/ProfileDesktop.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -59,6 +60,99 @@
 
 .circle_pic {
     position: absolute;
-    left: 53.5vw;
-    top: 59vh;
+    left: 55%;
+    top: 85%;
+}
+
+@media screen and (max-width: 1050px) {
+    .circle_pic {
+        left: 54%;
+    }
+
+    .intro_content_container h1 {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .circle_pic {
+        left: 52%;
+    }
+
+    .intro_content_container h1 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro_main_container {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .profile_pic {
+        right: -2.6%;
+        top: -22%;
+
+        width: 45%;
+        height: 120%;
+        background-image: url('../../assets/ProfileTablet.png');
+
+    }
+
+    .circle_pic {
+        left: 95%;
+        top: 75%;
+        width: 14%;
+    }
+
+    .intro_content_container h1 {
+        font-size: 50px;
+    }
+
+    .intro_desc {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+    .intro_main_container {
+        flex-direction: column-reverse;
+    }
+
+    .profile_pic {
+        right: 25.5%;
+        top: -5.5%;
+
+        width: 50%;
+        height: 55vh;
+        background-image: url('../../assets/ProfileTablet.png');
+    }
+
+    .circle_pic {
+        left: 89%;
+        top: 32%;
+        width: auto;
+    }
+
+    .intro_content_container {
+        text-align: center;
+        margin-top: 52vh;
+    }
+
+    .intro_desc {
+        margin-top: 3vh;
+    }
+
+    .btn_container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro_btn {
+        margin-top: 3vh;
+    }
 }

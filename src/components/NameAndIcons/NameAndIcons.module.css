@@ -31,3 +31,20 @@
 .margin_bottom {
     margin-bottom: 7vh;
 }
+
+@media screen and (max-width: 768px) {
+    .name_icons_main_container {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .icon_container {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .name_icons_main_container {
+        flex-direction: column;
+    }
+}

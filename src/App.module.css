@@ -38,3 +38,39 @@
   left: -300px;
   top: 410px;
 }
+
+@media screen and (max-width: 1550px) {
+  .sub_container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .sub_container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sub_container {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .horizontal_line {
+    margin-top: 10%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  .rings {
+    left: -40%;
+    top: 100px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .rings {
+    left: -50%;
+  }
+}

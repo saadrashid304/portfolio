@@ -91,12 +91,12 @@ const ContactForm = () => {
           I would love to hear about your project and how I could help. Please
           fill in the form, and I’ll get back to you as soon as possible.
         </p>
-        <p>
+        {/* <p>
           <span className={styles.heading}>Contact:</span> +92 313 5163383
         </p>
         <p>
           <span className={styles.heading}>Email:</span> saadrashid304@gmail.com
-        </p>
+        </p> */}
       </div>
       <div className={styles.contact_right_container}>
         <form
