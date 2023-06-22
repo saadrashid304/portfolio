@@ -157,3 +157,28 @@
         margin-top: 3vh;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .profile_pic {
+        right: 15%;
+        top: -5.5%;
+
+        width: 70%;
+        height: 55vh;
+        background-image: url('../../assets/ProfileTablet.png');
+    }
+
+    .circle_pic {
+        left: 90%;
+        top: 30%;
+        width: 25%;
+    }
+
+    .intro_content_container h1 {
+        font-size: 38px;
+    }
+
+    .intro_desc {
+        width: 95%;
+    }
+}

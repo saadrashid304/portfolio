@@ -50,3 +50,10 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .skills_main_container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}

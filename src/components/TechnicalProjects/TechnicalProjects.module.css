@@ -199,3 +199,18 @@
         margin-top: 1vh;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .projects_header h1 {
+        font-size: 38px;
+    }
+
+    .projects_main_container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .project_thumbnail img {
+        height: 250px;
+    }
+}

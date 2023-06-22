@@ -200,3 +200,10 @@ textarea:focus {
         width: 100%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .contact_main_container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
