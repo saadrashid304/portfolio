@@ -1,54 +1,65 @@
+const calculateYear = () => {
+  const joinDate = new Date("2022-09-01").getTime();
+  const currentDate = new Date().getTime();
+  const milliseconds = currentDate - joinDate;
+  const millisecondsInYear = 1000 * 60 * 60 * 24 * 365.25;
+  const years = milliseconds / millisecondsInYear;
+  return years.toFixed(1);
+};
+
+const year = calculateYear();
+
 const userSkills = [
   {
     id: 1,
     name: "HTML",
-    experience: 1,
+    experience: year,
   },
   {
     id: 2,
     name: "CSS",
-    experience: 1,
+    experience: year,
   },
   {
     id: 3,
     name: "JavaScript",
-    experience: 1,
+    experience: year,
   },
   {
     id: 4,
     name: "React.js",
-    experience: 1,
+    experience: year,
   },
   {
     id: 5,
     name: "Spring Boot",
-    experience: 1,
+    experience: year,
   },
   {
     id: 6,
     name: "Express.js",
-    experience: 1,
+    experience: year,
   },
   {
     id: 7,
     name: "Java",
-    experience: 1,
+    experience: year,
   },
 
   {
     id: 8,
     name: "MongoDB",
-    experience: 1,
+    experience: year,
   },
   {
     id: 9,
     name: "MS Office",
-    experience: 1,
+    experience: year,
   },
   {
     id: 10,
     name: "Microservices",
-    experience: 1,
+    experience: year,
   },
 ];
 
