@@ -4,10 +4,22 @@ import meals from "../MealsThumbnail.png";
 import sunnyside from "../SunnysideThumbnail.png";
 import card from "../CardThumbnail.png";
 import expense from "../ExpenseThumbnail.png";
+import lawful from "../LawfulThumbnail.png"
 
 const projects = [
   {
     id: 1,
+    title: "Lawful Interception",
+    skills: ["Html", "React", "Spring Boot"],
+    projectUrl: "",
+    sourceCodeUrl: "",
+    thumbnail: {
+      small: lawful,
+      large: lawful,
+    },
+  },
+  {
+    id: 2,
     title: "Designo",
     skills: ["Html", "CSS", "React"],
     projectUrl: "https://sr-designo.netlify.app",
@@ -18,7 +30,7 @@ const projects = [
     },
   },
   {
-    id: 2,
+    id: 3,
     title: "Space Tourism",
     skills: ["Html", "CSS", "React"],
     projectUrl: "https://sr-tourism.netlify.app",
@@ -29,7 +41,7 @@ const projects = [
     },
   },
   {
-    id: 3,
+    id: 4,
     title: "SR Meals",
     skills: ["Html", "CSS", "JavaScript"],
     projectUrl: "https://sr-meals.netlify.app",
@@ -40,7 +52,7 @@ const projects = [
     },
   },
   {
-    id: 4,
+    id: 5,
     title: "Sunnyside",
     skills: ["Html", "CSS"],
     projectUrl: "https://sr-sunnyside.netlify.app",
@@ -51,7 +63,7 @@ const projects = [
     },
   },
   {
-    id: 5,
+    id: 6,
     title: "Expense Tracker",
     skills: ["Html", "CSS", "JavaScript"],
     projectUrl: "https://sr-expense-tracker.netlify.app",
@@ -62,7 +74,7 @@ const projects = [
     },
   },
   {
-    id: 6,
+    id: 7,
     title: "Credit Card Details",
     skills: ["Html", "CSS"],
     projectUrl: "https://sr-credit-card.netlify.app",

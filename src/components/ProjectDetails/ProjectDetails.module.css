@@ -1,0 +1,34 @@
+.projects_main_container {
+    margin-top: 8vh;
+}
+
+.projects_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects_header h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 88px;
+}
+
+.projects_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects_list_item {
+    width: 48.5%;
+    margin-bottom: 6vh;
+}
+
+.projects_list_item img {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 2vh;
+    display: block;
+}

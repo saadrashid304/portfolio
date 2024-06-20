@@ -1,7 +1,15 @@
 import styles from "./TechnicalProjects.module.css";
 import { projects } from "../../assets/data/projects";
+import { useNavigate } from "react-router-dom";
 
 const TechnicalProjects = () => {
+
+  const navigate = useNavigate();
+
+  const viewScreenshotsClickHandler = () => {
+    navigate("/projectDetails");
+  };
+
   return (
     <div className={styles.projects_main_container}>
       <div className={styles.projects_header}>
@@ -22,28 +30,39 @@ const TechnicalProjects = () => {
             <div className={styles.project_thumbnail}>
               <img src={project.thumbnail.large} alt="" />
               <div className={styles.projects_btn_group}>
-                <a
-                  href={project.projectUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                {project.projectUrl !== "" ? (
+                  <>
+                    <a
+                      href={project.projectUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <p
+                        className={`${styles.projects_contact_btn} ${styles.projects_view_btn}`}
+                      >
+                        VIEW PROJECT
+                      </p>
+                    </a>
+                    <a
+                      href={project.sourceCodeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <p
+                        className={`${styles.projects_contact_btn} ${styles.projects_code_btn}`}
+                      >
+                        VIEW CODE
+                      </p>
+                    </a>
+                  </>
+                ) : (
                   <p
-                    className={`${styles.projects_contact_btn} ${styles.projects_view_btn}`}
+                    className={`${styles.projects_contact_btn} ${styles.projects_view_screen_btn}`}
+                    onClick={viewScreenshotsClickHandler}
                   >
-                    VIEW PROJECT
+                    VIEW PROJECT SCREENSHOTS
                   </p>
-                </a>
-                <a
-                  href={project.sourceCodeUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <p
-                    className={`${styles.projects_contact_btn} ${styles.projects_code_btn}`}
-                  >
-                    VIEW CODE
-                  </p>
-                </a>
+                )}
               </div>
             </div>
             <h2>{project.title}</h2>

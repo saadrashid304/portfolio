@@ -38,6 +38,13 @@
     border-bottom: 3px solid #4CE19E;
 }
 
+.projects_view_screen_btn {
+    width: 225px;
+    margin-top: 0px;
+    border-bottom: 3px solid #4CE19E;
+    text-align: center;
+}
+
 .projects_contact_btn:hover {
     color: #4CE19E;
     cursor: pointer;
