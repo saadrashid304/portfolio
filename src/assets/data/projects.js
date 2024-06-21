@@ -4,7 +4,8 @@ import meals from "../MealsThumbnail.png";
 import sunnyside from "../SunnysideThumbnail.png";
 import card from "../CardThumbnail.png";
 import expense from "../ExpenseThumbnail.png";
-import lawful from "../LawfulThumbnail.png"
+import lawful from "../LawfulThumbnail.png";
+import game from "../GameThumbnail.png";
 
 const projects = [
   {
@@ -42,6 +43,17 @@ const projects = [
   },
   {
     id: 4,
+    title: "Rock, Paper, Scissors Game",
+    skills: ["Html", "CSS", "React"],
+    projectUrl: "https://sr-game.netlify.app/",
+    sourceCodeUrl: "https://github.com/saadrashid304/rock-paper-game",
+    thumbnail: {
+      small: game,
+      large: game,
+    },
+  },
+  {
+    id: 5,
     title: "SR Meals",
     skills: ["Html", "CSS", "JavaScript"],
     projectUrl: "https://sr-meals.netlify.app",
@@ -52,7 +64,7 @@ const projects = [
     },
   },
   {
-    id: 5,
+    id: 6,
     title: "Sunnyside",
     skills: ["Html", "CSS"],
     projectUrl: "https://sr-sunnyside.netlify.app",
@@ -63,7 +75,7 @@ const projects = [
     },
   },
   {
-    id: 6,
+    id: 7,
     title: "Expense Tracker",
     skills: ["Html", "CSS", "JavaScript"],
     projectUrl: "https://sr-expense-tracker.netlify.app",
@@ -74,7 +86,7 @@ const projects = [
     },
   },
   {
-    id: 7,
+    id: 8,
     title: "Credit Card Details",
     skills: ["Html", "CSS"],
     projectUrl: "https://sr-credit-card.netlify.app",
