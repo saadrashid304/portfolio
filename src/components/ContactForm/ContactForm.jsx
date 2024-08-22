@@ -1,8 +1,11 @@
 import styles from "./ContactForm.module.css";
 import useValidation from "../../hooks/use-validation";
 import { toast } from "react-toastify";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
+  const formRef = useRef();
   const {
     value: name,
     isValid: nameIsValid,
@@ -58,26 +61,41 @@ const ContactForm = () => {
       return;
     }
 
-    const object = {
-      clientName: name,
-      clientEmail: email,
-      clientMessage: message,
-    };
-
-    const res = await fetch(
-      "https://myportfolioclients-default-rtdb.asia-southeast1.firebasedatabase.app/clients.json",
-      {
-        method: "POST",
-        body: JSON.stringify(object),
-      }
-    );
-    if (res.status === 200) {
-      toast.success(
-        "Your response was submitted successfully. Saad will get to you as soon as possible. Thankyou."
+    emailjs
+      .sendForm("service_koo06gb", "template_ckpum0m", formRef.current, {
+        publicKey: "8v3Pwjig8dMn3i0yM",
+      })
+      .then(
+        () => {
+          toast.success(
+            "Email Succesfully Sent, Thank you for reaching out to me!"
+          );
+        },
+        (error) => {
+          toast.error("FAILED...,Try contacting through Linkedin!");
+        }
       );
-    } else {
-      toast.error("Something went wrong. Please try later.");
-    }
+
+    // const object = {
+    //   clientName: name,
+    //   clientEmail: email,
+    //   clientMessage: message,
+    // };
+
+    // const res = await fetch(
+    //   "https://myportfolioclients-default-rtdb.asia-southeast1.firebasedatabase.app/clients.json",
+    //   {
+    //     method: "POST",
+    //     body: JSON.stringify(object),
+    //   }
+    // );
+    // if (res.status === 200) {
+    //   toast.success(
+    //     "Your response was submitted successfully. Saad will get to you as soon as possible. Thankyou."
+    //   );
+    // } else {
+    //   toast.error("Something went wrong. Please try later.");
+    // }
     resetName();
     resetEmail();
     resetMessage();
@@ -91,21 +109,23 @@ const ContactForm = () => {
           I would love to hear about your project and how I could help. Please
           fill in the form, and I’ll get back to you as soon as possible.
         </p>
-        {/* <p>
+        <p>
           <span className={styles.heading}>Contact:</span> +92 313 5163383
         </p>
         <p>
           <span className={styles.heading}>Email:</span> saadrashid304@gmail.com
-        </p> */}
+        </p>
       </div>
       <div className={styles.contact_right_container}>
         <form
           className={styles.contact_form_container}
           onSubmit={submitHandler}
+          ref={formRef}
         >
           <div className={nameClasses}>
             <input
               type="text"
+              name="user_name"
               placeholder="NAME"
               value={name}
               onChange={nameChangeHandler}
@@ -118,6 +138,7 @@ const ContactForm = () => {
           <div className={emailClasses}>
             <input
               type="text"
+              name="user_email"
               placeholder="EMAIL"
               value={email}
               onChange={emailChangeHandler}
@@ -132,6 +153,7 @@ const ContactForm = () => {
           <div className={messageClasses}>
             <textarea
               placeholder="MESSAGE"
+              name="user_message"
               value={message}
               onChange={messageChangeHandler}
               onBlur={messageBlurHandler}

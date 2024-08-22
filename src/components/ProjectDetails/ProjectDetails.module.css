@@ -1,7 +1,3 @@
-.projects_main_container {
-    margin-top: 8vh;
-}
-
 .projects_header {
     display: flex;
     justify-content: space-between;
@@ -31,4 +27,34 @@
     height: 350px;
     margin-bottom: 2vh;
     display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .projects_header h1 {
+        font-size: 40px;
+    }
+
+    .projects_main_container {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .projects_list_item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .projects_header h1 {
+        font-size: 30px;
+    }
+
+    .projects_main_container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .projects_list_item img {
+        height: 250px;
+    }
 }

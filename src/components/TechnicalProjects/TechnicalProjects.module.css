@@ -220,4 +220,8 @@
     .project_thumbnail img {
         height: 250px;
     }
+
+    .projects_list_item h2 {
+        font-size: 23px;
+    }
 }
