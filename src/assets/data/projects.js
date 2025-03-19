@@ -6,6 +6,7 @@ import card from "../CardThumbnail.png";
 import expense from "../ExpenseThumbnail.png";
 import lawful from "../LawfulThumbnail.png";
 import game from "../GameThumbnail.png";
+import audiophile from "../audiophileThumbnail.png";
 
 const projects = [
   {
@@ -21,6 +22,17 @@ const projects = [
   },
   {
     id: 2,
+    title: "Audiophile",
+    skills: ["Html", "CSS", "React"],
+    projectUrl: "https://sr-audiophile.netlify.app",
+    sourceCodeUrl: "https://github.com/saadrashid304/audiophile-frontend",
+    thumbnail: {
+      small: audiophile,
+      large: audiophile,
+    },
+  },
+  {
+    id: 3,
     title: "Designo",
     skills: ["Html", "CSS", "React"],
     projectUrl: "https://sr-designo.netlify.app",
@@ -31,7 +43,7 @@ const projects = [
     },
   },
   {
-    id: 3,
+    id: 4,
     title: "Space Tourism",
     skills: ["Html", "CSS", "React"],
     projectUrl: "https://sr-tourism.netlify.app",
@@ -42,7 +54,7 @@ const projects = [
     },
   },
   {
-    id: 4,
+    id: 5,
     title: "Rock, Paper, Scissors Game",
     skills: ["Html", "CSS", "React"],
     projectUrl: "https://sr-game.netlify.app/",
@@ -53,7 +65,7 @@ const projects = [
     },
   },
   {
-    id: 5,
+    id: 6,
     title: "SR Meals",
     skills: ["Html", "CSS", "JavaScript"],
     projectUrl: "https://sr-meals.netlify.app",
@@ -64,7 +76,7 @@ const projects = [
     },
   },
   {
-    id: 6,
+    id: 7,
     title: "Sunnyside",
     skills: ["Html", "CSS"],
     projectUrl: "https://sr-sunnyside.netlify.app",
@@ -74,28 +86,28 @@ const projects = [
       large: sunnyside,
     },
   },
-  {
-    id: 7,
-    title: "Expense Tracker",
-    skills: ["Html", "CSS", "JavaScript"],
-    projectUrl: "https://sr-expense-tracker.netlify.app",
-    sourceCodeUrl: "https://github.com/saadrashid304/ExpenseTracker",
-    thumbnail: {
-      small: expense,
-      large: expense,
-    },
-  },
-  {
-    id: 8,
-    title: "Credit Card Details",
-    skills: ["Html", "CSS"],
-    projectUrl: "https://sr-credit-card.netlify.app",
-    sourceCodeUrl: "https://github.com/saadrashid304/card-details-challenge",
-    thumbnail: {
-      small: card,
-      large: card,
-    },
-  },
+  // {
+  //   id: 8,
+  //   title: "Expense Tracker",
+  //   skills: ["Html", "CSS", "JavaScript"],
+  //   projectUrl: "https://sr-expense-tracker.netlify.app",
+  //   sourceCodeUrl: "https://github.com/saadrashid304/ExpenseTracker",
+  //   thumbnail: {
+  //     small: expense,
+  //     large: expense,
+  //   },
+  // },
+  // {
+  //   id: 9,
+  //   title: "Credit Card Details",
+  //   skills: ["Html", "CSS"],
+  //   projectUrl: "https://sr-credit-card.netlify.app",
+  //   sourceCodeUrl: "https://github.com/saadrashid304/card-details-challenge",
+  //   thumbnail: {
+  //     small: card,
+  //     large: card,
+  //   },
+  // },
 ];
 
 export { projects };
